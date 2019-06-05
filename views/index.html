@@ -27,26 +27,40 @@
     <script src="/client.js" defer></script>
   </head>
   <body>
-    <section class="ui segment">
+    <section class="ui blue segment">
     <header class="ui header">
-      <h1>
+      <h1 class ="ui blue center aligned header">
         A Dream of the Past,Present and Future
       </h1>
     </header>
       </section>
 
     <main>
-      <section class="ui segment">
+      <section class="ui stacked segment">
       <p class="bold">Oh hello,</p>
       
       <p>Tell me your favourite food:</p>
       
-      <form class = "ui segment form">
+        <div class = "ui form">
+        <div class="inline field">
         <input name="dream" type="text" maxlength="100" placeholder="Food!" aria-labelledby="submit-dream">
-        <button class ="ui blue submit button" type="submit" id="submit-dream">Submit Food</button>
-      </form>
-        <ul id="dreams"></ul>
-    </section>
+        <button class ="ui submit button" type="submit" id="submit-dream">Submit Food</button>
+        </div>
+        </div>
+        <div class="ui two column very relaxed grid">
+          <div class ="column">
+            
+        <ul id="dreams">
+         <li>Burgers</li>
+    <li>Pizza</li>
+        </ul>
+          </div>
+          <div class ="column">
+            <img class = "ui  image" src="https://cdn.hyperdev.com/click-me.svg">
+          </div>
+      
+        </div>
+      </section>
         </main>
     <footer>
       Made with <a href="https://glitch.com">Glitch</a>!
